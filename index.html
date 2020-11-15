@@ -9,32 +9,38 @@
     <title>My Website</title>
 </head>
 <body>
-<!-- BG-IMG -->
-    <section class="bg-img" id="home"></section>
-<!-- NAVBAR -->
-    <nav>
-        <h1 class="logo">Kamil Anwar</h1>
-         <ul class="nav-items">
-            <li><a href="#home" class="nav-links">Home</a></li>
-            <li><a href="#about" class="nav-links">About</a></li>
-            <li><a href="#skills" class="nav-links">Skills</a></li>
-            <li><a href="#" class="nav-links">Work</a></li>
-         </ul>
-    </nav>
-    <section class="body-box">
-        <div class="left-body">
-            <h3 id="type-text"> </h3>
-            <h1 class="title">Kamil Anwar</h1>
-            <p class="body-desc">Your Friendly Neighbourhood
-                Web & App Developer.
-                Programmer.
-                <p>Dreamer.</p>           
-            </p>
-            <button class="cta"> About me !</button>
-        </div>
-       
-            <img class="right-body" src="images/kamil.jpg" alt="">
-         
+
+<!-- LANDING HOME -->
+    <section id="home">
+
+        <!-- BG-IMG -->
+            <section class="bg-img" ></section>
+        <!-- NAVBAR -->
+            <nav>
+                <h1 class="logo">Kamil Anwar</h1>
+                 <ul class="nav-items">
+                    <li><a href="#home" class="nav-links">Home</a></li>
+                    <li><a href="#about" class="nav-links">About</a></li>
+                    <li><a href="#skills" class="nav-links">Skills</a></li>
+                    <li><a href="#" class="nav-links">Work</a></li>
+                 </ul>
+            </nav>
+        <!-- BODY SECTION -->
+            <section class="body-box">
+                <div class="left-body">
+                    <h3 id="type-text"> </h3>
+                    <h1 class="title">Kamil Anwar</h1>
+                    <p class="body-desc">Your Friendly Neighbourhood
+                        Web & App Developer.
+                        Programmer.
+                        <p>Dreamer.</p>           
+                    </p>
+                    <button class="cta"> About me !</button>
+                </div>
+               
+                    <img class="right-body" src="images/kamil.jpg" alt="">
+                 
+            </section>
     </section>
  <!-- ABOUT SECTION -->
     <section class="about-me" id="about">
@@ -90,7 +96,38 @@
         </div>
 
     </section>
-    <section class="work">
+
+    <section class="work" id="work">
+        <h1>Work</h1>
+        <p>Here are some of my projects</p>
+
+        <div class="work-grid">
+            <div class="card">
+                <h3 class="card-title">NewsBuddy</h3>
+                <p class="card-text">A Real-Time News App made with flutter and dart that uses NewsAPI to get the tech-news from around the world.</p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Tip Calculator Web App</h3>
+                <p class="card-text">A web app that allows us to calculate the tip to be given , made with HTML,CSS,Node.js,Express and EJS.</p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">WeatherMeter</h3>
+                
+                <p class="card-text">A Cross-Platform Mobile Application that gets the current weather data of the location selected by the user.</p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Twitter Web Automation</h3>
+                <p class="card-text">A Python Script that auto logins twitter for you , made using selenium and chromedriver.</p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Schedulo - The Routine App</h3>
+                <p class="card-text">A flutter app made to keep track of the class schedule with its timings and an on device SQL database</p>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Simon Game</h3>
+                <p class="card-text">A Simon Game website made using Javascript and jQuery</p>
+            </div>
+        </div>
 
     </section>
 

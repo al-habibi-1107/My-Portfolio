@@ -9,10 +9,13 @@
 
 body{
     height: 400vh;
+    background: black;
 }
 
 /* NAVBAR */
-
+#home{
+    height: 100vh;
+}
 nav{
     background: rgba(1,1,1,0.5) ;
 
@@ -29,7 +32,7 @@ nav{
 }
 
 nav .logo{
-    font-weight: 500;
+    font-weight: bold;
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -44,6 +47,7 @@ nav ul{
 }
 
 nav ul a{
+    font-weight: 500;
     text-decoration: none;
     margin-left: 20px;
     color: white;
@@ -96,6 +100,7 @@ section.body-box{
     left: 8%;
     justify-content: space-between;
     padding-right: 10%;
+    height: 60vh;
     
 }
 
@@ -104,12 +109,13 @@ section.body-box{
     position: relative;
     transform: translateY(-10%);
     max-width: 40%;
+    height: auto;
     border-radius: 50%;
+    min-width: 200px;
 }
 
 
 .left-body h3{
-    display: inline;
     font-family: 'Courier Prime', monospace;;
     font-weight: 400;
     font-size: 1.5em;
@@ -147,15 +153,19 @@ section.body-box{
 
 .left-body .cta:hover{
     cursor: pointer;
-    background: #078cc6;
+    /* background: linear-gradient(#EB4677,#994DC5); */
+    background: linear-gradient(#a8ff78,#78ffd6);
+    color: black;
 }
 
 /* ABOUT SECTION */
 
 .about-me{
-    max-height: fit-content;
+    height: 80vh;
+    /* max-height: fit-content; */
     padding: 5% 8% 6% 8%;
     text-align: center;
+    background: white;
 }
 
 .about-title{
@@ -185,10 +195,10 @@ section.body-box{
 .about-content img{
     width: 50%;
 }
-/* SKILLS SECTION */
+/* SKILLS SECTION & WORK STYLES */
 
-.skills{
-    background: black;
+.skills,.work{
+    /* background: black; */
     width: 100%;
     height: 120vh;
     padding: 8% 6% 8% 6%;
@@ -203,7 +213,7 @@ section.body-box{
     
 }
 
-.skills p{
+.skills p,.work p{
     font-size: 1em;
     display: inline;
     position: relative;
@@ -211,7 +221,7 @@ section.body-box{
 }
 
 
-.skill-grid{
+.skill-grid,.work-grid{
     margin-top: 10vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -220,7 +230,7 @@ section.body-box{
     /* height: 70vh; */
 }
 
-.skill-grid .card{
+.skill-grid .card,.work-grid .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,12 +238,16 @@ section.body-box{
     overflow: auto;
     padding: 20px;
     height: 250px;
-   
+    
 }
 
-.skill-grid .card:hover{
-    background: #06aef5;
-    transition: 0.6s;
+.skill-grid .card:hover,.work-grid .card:hover{
+    /* background: linear-gradient(#EB4677,#994DC5); */
+    /* background: linear-gradient(#59C173,#a17fe0,#5D26C1); */
+    /* background: linear-gradient(#8A2387,#E94057,#F27121); */
+    /* background: linear-gradient(#FF416C,#FF4B2B); */
+    background: linear-gradient(#a8ff78,#66d8b6);
+    color: black
     
 }
 
@@ -243,7 +257,24 @@ section.body-box{
 }
 
 
-.skill-grid .card .card-text{
+.skill-grid .card .card-text,.work-grid .card .card-text{
     align-self: center;
    
+}
+
+/* WORK SECTION */
+
+#work{
+    height: 150vh;
+    background: white;
+    color: black;
+}
+
+.work h1{
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.work-grid{
+    grid-gap: 50px 50px;
 }
