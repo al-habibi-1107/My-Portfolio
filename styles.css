@@ -99,11 +99,17 @@ section.body-box{
     
 }
 
+/* BODY IMAGE */
 .right-body{
+    position: relative;
+    transform: translateY(-10%);
     max-width: 40%;
     border-radius: 50%;
 }
+
+
 .left-body h3{
+    display: inline;
     font-family: 'Courier Prime', monospace;;
     font-weight: 400;
     font-size: 1.5em;
@@ -123,6 +129,7 @@ section.body-box{
     font-size: 1.5em ;
     max-width: 550px;
 }
+
 
 .left-body .cta{
     position: relative;

@@ -18,7 +18,6 @@ function typeAnim(){
 }
 
 window.onload= function(){
-  
       setTimeout(typeAnim,500);
    
 }
