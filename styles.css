@@ -137,7 +137,7 @@ section.body-box{
 }
 
 
-.left-body .cta{
+.left-body .cta,.view-more,.resume-btn{
     position: relative;
     margin-top: 20px;
     padding: 10px 20px;
@@ -207,13 +207,13 @@ section.body-box{
     
 }
 
-.skills h1{
+.skills h1,.contact h1{
     font-size: 2.3em;
     font-weight: 500;
     
 }
 
-.skills p,.work p{
+.skills p,.work p,.resume p{
     font-size: 1em;
     display: inline;
     position: relative;
@@ -265,7 +265,7 @@ section.body-box{
 /* WORK SECTION */
 
 #work{
-    height: 150vh;
+    height: 110vh;
     background: white;
     color: black;
 }
@@ -278,3 +278,96 @@ section.body-box{
 .work-grid{
     grid-gap: 50px 50px;
 }
+
+.view-more{
+    margin-top: 30px;
+}
+
+/* RESUME SECTION */
+
+
+.resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background: white;
+}
+
+.resume h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.resume p{
+    margin-bottom: 20px;
+}
+.resume-btn{
+    margin: 20px;
+}
+
+.contact{
+   text-align: center;
+    width: 100%;
+    height: 90vh;
+    color: black;
+    color: white;
+    padding: 6% 5% 6% 5%;
+}
+
+.contact h5{
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+
+.contact-main{
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-left{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.contact-item{
+    text-align: start;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-text{
+    margin-left: 15px;
+}
+
+.contact-text h3{
+    font-weight: 500;
+    font-size: 1.5em;
+    color:#16B6FB ;
+}
+
+.contact-text p{
+    font-weight: 400;
+    font-size: 0.7em;
+}
+
+
+.contact-left .contact-item .contact-icon{
+    width: 30px;
+    height: 30px
+}
+
+.view-more:hover,.resume-btn:hover{
+    background:#128fc4 ;
+    cursor: pointer;
+}
+
+
+

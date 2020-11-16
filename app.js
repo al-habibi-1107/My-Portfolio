@@ -21,3 +21,8 @@ window.onload= function(){
       setTimeout(typeAnim,500);
    
 }
+
+function redirect(url){
+
+   window.location.href = url;
+}

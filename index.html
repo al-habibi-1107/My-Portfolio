@@ -22,7 +22,9 @@
                     <li><a href="#home" class="nav-links">Home</a></li>
                     <li><a href="#about" class="nav-links">About</a></li>
                     <li><a href="#skills" class="nav-links">Skills</a></li>
-                    <li><a href="#" class="nav-links">Work</a></li>
+                    <li><a href="#work" class="nav-links">Work</a></li>
+                    <li><a href="#contact" class="nav-links">Contact</a></li>
+
                  </ul>
             </nav>
         <!-- BODY SECTION -->
@@ -35,11 +37,9 @@
                         Programmer.
                         <p>Dreamer.</p>           
                     </p>
-                    <button class="cta"> About me !</button>
+                    <button class="cta" onclick="redirect('#about')"> About me !</button>
                 </div>
-               
                     <img class="right-body" src="images/kamil.jpg" alt="">
-                 
             </section>
     </section>
  <!-- ABOUT SECTION -->
@@ -102,34 +102,88 @@
         <p>Here are some of my projects</p>
 
         <div class="work-grid">
-            <div class="card">
+            <div class="card" onclick="redirect('https://github.com/al-habibi-1107/News-Buddy')">
                 <h3 class="card-title">NewsBuddy</h3>
                 <p class="card-text">A Real-Time News App made with flutter and dart that uses NewsAPI to get the tech-news from around the world.</p>
             </div>
-            <div class="card">
+            <div class="card" onclick="redirect('https://github.com/al-habibi-1107/Tip-Calculator-Web-App')">
                 <h3 class="card-title">Tip Calculator Web App</h3>
                 <p class="card-text">A web app that allows us to calculate the tip to be given , made with HTML,CSS,Node.js,Express and EJS.</p>
             </div>
-            <div class="card">
+            <div class="card" onclick="redirect('https://github.com/al-habibi-1107/WeatherMeter')">
                 <h3 class="card-title">WeatherMeter</h3>
-                
                 <p class="card-text">A Cross-Platform Mobile Application that gets the current weather data of the location selected by the user.</p>
             </div>
-            <div class="card">
+            <div class="card" onclick="redirect('https://github.com/al-habibi-1107/Twitter-Web-Automation')">
                 <h3 class="card-title">Twitter Web Automation</h3>
                 <p class="card-text">A Python Script that auto logins twitter for you , made using selenium and chromedriver.</p>
             </div>
-            <div class="card">
+            <div class="card" onclick="redirect('https://github.com/al-habibi-1107/routine_app-1')">
                 <h3 class="card-title">Schedulo - The Routine App</h3>
                 <p class="card-text">A flutter app made to keep track of the class schedule with its timings and an on device SQL database</p>
             </div>
-            <div class="card">
+            <div class="card" onclick="redirect('https://github.com/al-habibi-1107/Simon-Game-Web')">
                 <h3 class="card-title">Simon Game</h3>
                 <p class="card-text">A Simon Game website made using Javascript and jQuery</p>
             </div>
         </div>
 
+        <button class="view-more" onclick="redirect('https://github.com/al-habibi-1107')">View More</button>
+
     </section>
+     <section class="resume">
+                <h2>Resume</h2>
+                <p>Click here to see my Resume</p>
+    
+                <button class="resume-btn">Resume</button>
+            
+    </section>
+
+    <section class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <h5>Ill be waiting in my mailbox</h5>
+
+        <div class="contact-main">
+            <div class="contact-left">
+                <div class="contact-item">
+                    <img class="contact-icon" src="images/phone.png" alt="">
+                    <div class="contact-text">
+                        <h3>Phone</h3>
+                        <p>+91 8210343814</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <img class="contact-icon" src="images/email.png" alt="">
+                    <div class="contact-text">
+                        <h3>E-Mail</h3>
+                        <p>kamil.work2001@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <img class="contact-icon" src="images/github.png" alt="">
+                    <div class="contact-text">
+                        <h3>GitHub</h3>
+                        <p>https://github.com/al-habibi-1107</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <img class="contact-icon" src="images/linkedin.png" alt="">
+                    <div class="contact-text">
+                        <h3>LinkedIn</h3>
+                        <p>https://www.linkedin.com/in/kamil-anwar-369028194/</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-right">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <button></button>
+            </div>
+        </div>
+
+    </section>
+
 
 
 
