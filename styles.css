@@ -401,6 +401,19 @@ textarea,input{
     width: 100%;
 }
 
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+    height: 6vh;
+
+}
+
+/* ********************************* MOBILE DESIGN ************************************* */
+
+
 @media  screen and (max-width:600px){
 
     /* BODY WIDTH */
@@ -475,9 +488,13 @@ section .body-box{
    grid-gap: 0;
 
 }
-.skill-grid .card,.work-grid .card{
+.skill-grid .card{
     margin: auto;
     width: 60%;
+}
+.work-grid .card{
+    margin:auto;
+    width: 70%;
 }
 .skill-grid .card img{
     width: 80px;
@@ -518,6 +535,11 @@ section .body-box{
 .contact-right{
     margin-top: 20px;
     width: 100%;
+}
+
+.copyright{
+  
+    font-size: 0.7em;
 }
 
 }
