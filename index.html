@@ -135,7 +135,7 @@
                 <h2>Resume</h2>
                 <p>Click here to see my Resume</p>
     
-                <button class="resume-btn">Resume</button>
+                <button class="resume-btn" onclick="redirect('images/Resume.pdf')">Resume</button>
             
     </section>
 
@@ -163,22 +163,24 @@
                     <img class="contact-icon" src="images/github.png" alt="">
                     <div class="contact-text">
                         <h3>GitHub</h3>
-                        <p>https://github.com/al-habibi-1107</p>
+                        <p>al-habibi-1107</p>
                     </div>
                 </div>
                 <div class="contact-item">
                     <img class="contact-icon" src="images/linkedin.png" alt="">
                     <div class="contact-text">
                         <h3>LinkedIn</h3>
-                        <p>https://www.linkedin.com/in/kamil-anwar-369028194/</p>
+                        <p>Kamil Anwar</p>
                     </div>
                 </div>
             </div>
             <div class="contact-right">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button></button>
+                <form action="https://formspree.io/f/myybplnw" method="POST">
+                    <input  placeholder="Full Name" type="text" name="name"></input>
+                    <input  placeholder="Email-id" type="text" name="_replyto" ></input>
+                    <textarea name="message" id="" cols="1" rows="9" placeholder="Your Message Here"></textarea>
+                    <button class="send" type="submit">Send!</button>
+                </form>
             </div>
         </div>
 

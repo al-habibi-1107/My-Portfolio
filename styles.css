@@ -106,9 +106,10 @@ section.body-box{
 
 /* BODY IMAGE */
 .right-body{
-    position: relative;
+    /* position: relative; */
     transform: translateY(-10%);
-    max-width: 40%;
+    max-width: 35%;
+    width: auto;
     height: auto;
     border-radius: 50%;
     min-width: 200px;
@@ -137,7 +138,7 @@ section.body-box{
 }
 
 
-.left-body .cta,.view-more,.resume-btn{
+.left-body .cta,.view-more,.resume-btn,.send{
     position: relative;
     margin-top: 20px;
     padding: 10px 20px;
@@ -204,6 +205,8 @@ section.body-box{
     padding: 8% 6% 8% 6%;
     color: white;
     text-align: center;
+    min-height: fit-content;
+
     
 }
 
@@ -287,12 +290,14 @@ section.body-box{
 
 
 .resume{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 50vh;
     background: white;
+    min-height: max-content;
 }
 
 .resume h2{
@@ -305,6 +310,8 @@ section.body-box{
 .resume-btn{
     margin: 20px;
 }
+
+/* CONTACT SECTION */
 
 .contact{
    text-align: center;
@@ -355,7 +362,7 @@ section.body-box{
 
 .contact-text p{
     font-weight: 400;
-    font-size: 0.7em;
+    font-size: 1em;
 }
 
 
@@ -364,10 +371,153 @@ section.body-box{
     height: 30px
 }
 
-.view-more:hover,.resume-btn:hover{
+.view-more:hover,.resume-btn:hover,.send:hover{
     background:#128fc4 ;
     cursor: pointer;
 }
 
+.contact-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 
+textarea,input{
+    
+  border: none;
+  background: rgb(82, 81, 81);
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  color: white;
+  font-weight: 600;
+  font-size: medium;
+}
+
+.contact-right form button{
+    width: 100%;
+}
+
+@media  screen and (max-width:600px){
+
+    /* BODY WIDTH */
+    body{
+        width: 100%;
+    }
+
+.right-body{
+   visibility: hidden;
+}
+/* NAVBAR */
+nav ul{
+    width: 0;
+    visibility: hidden;
+}
+
+nav ul a{
+    transition: none;
+}
+
+
+
+nav{
+justify-content: center;
+align-items: center;
+
+}
+
+nav .logo{
+    margin: auto;
+ min-width: max-content;
+}
+
+/* BODY */
+section .body-box{
+    display: inline;
+    align-items: center;
+}
+
+.cta{
+    width: 50%;
+}
+.left-body{
+  text-align: center;
+}
+/* ABOUT SECTION */
+
+.about-me{
+    min-height: fit-content;
+    height: auto;
+}
+
+.about-me .about-content{
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-me .about-content img{
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skills,#work{
+    min-height: fit-content;
+    height: auto;
+}
+.skill-grid,.work-grid{
+   display: flex;
+   flex-direction: column;
+   grid-gap: 0;
+
+}
+.skill-grid .card,.work-grid .card{
+    margin: auto;
+    width: 60%;
+}
+.skill-grid .card img{
+    width: 80px;
+}
+
+.work-grid .card .card-text{
+    text-align: left;
+}
+
+/* RESUME */
+
+.resume{
+    padding-top: 100px;
+    height: auto;
+}
+
+.resume h2{
+    font-size: 1.5em;
+}
+
+/* CONTACT */
+.contact{
+    height: auto;
+}
+
+.contact h1{
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+.contact h5{
+    font-size: 1em;
+}
+
+.contact-main{
+    flex-direction: column;
+}
+
+.contact-right{
+    margin-top: 20px;
+    width: 100%;
+}
+
+}
