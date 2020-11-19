@@ -4,7 +4,7 @@ window.addEventListener("scroll",function(){
 });
 
 var i =0;
-var text = "Hello World ...!\n I'm";
+var text = "Hello World ... I'm";
 var speed = 100;
 
 

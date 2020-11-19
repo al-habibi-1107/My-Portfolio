@@ -454,7 +454,8 @@ section .body-box{
 }
 
 .cta{
-    width: 50%;
+    min-width: 200px;
+   
 }
 .left-body{
   text-align: center;
@@ -490,7 +491,8 @@ section .body-box{
 }
 .skill-grid .card{
     margin: auto;
-    width: 60%;
+    min-width: 350px;
+    width: 70%;
 }
 .work-grid .card{
     margin:auto;
