@@ -113,14 +113,19 @@ section.body-box{
     height: auto;
     border-radius: 50%;
     min-width: 200px;
+    animation: slide 0.5s ease-in;
 }
 
+.left-body{
+    animation: slide 0.5s ease-in;
+}
 
 .left-body h3{
     font-family: 'Courier Prime', monospace;;
     font-weight: 400;
     font-size: 1.5em;
     margin-bottom: 10px;
+    
 }
 
 .left-body .title{
@@ -129,6 +134,7 @@ section.body-box{
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
+    
 }
 
 .left-body .body-desc,p{
@@ -545,3 +551,18 @@ section .body-box{
 }
 
 }
+
+/* ******************LOADER****************** */
+
+
+@keyframes slide{
+    0%{ opacity: 0;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(10);
+    }
+}
+  
+  

@@ -3,6 +3,10 @@ window.addEventListener("scroll",function(){
    nav.classList.toggle("sticky",window.scrollY > 0);
 });
 
+
+
+
+
 var i =0;
 var text = "Hello World ... I'm";
 var speed = 100;
